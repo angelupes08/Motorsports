@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.lti.entity.DriverDto;
 import com.lti.entity.Drivers;
+import com.lti.entity.Teams;
 
 public interface DriverService {
 	
@@ -18,5 +19,7 @@ public interface DriverService {
 	List<Drivers> getDriversByNationality(String nationality);
 	
 	List<DriverDto> getDriverDetailsByNationality(String nationality);
+	
+	List<Teams> getTeams();
 
 }

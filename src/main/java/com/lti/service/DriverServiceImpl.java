@@ -101,6 +101,12 @@ public class DriverServiceImpl implements DriverService {
 		
 		return dRepo.getDriverDetailsByNationality(nationality);
 	}
+
+	@Override
+	public List<Teams> getTeams() {
+		
+		return tRepo.findAll();
+	}
 		
 		
 		

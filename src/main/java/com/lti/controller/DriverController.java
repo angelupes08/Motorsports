@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lti.entity.DriverDto;
 import com.lti.entity.Drivers;
+import com.lti.entity.Teams;
 import com.lti.service.DriverService;
 
 @RestController
@@ -62,4 +63,8 @@ public class DriverController {
 		return dService.getDriverDetailsByNationality(country);
 	}
 	
+	@GetMapping("/teams")
+	public List<Teams> getTeams(){
+		return dService.getTeams();
+	}
 }
