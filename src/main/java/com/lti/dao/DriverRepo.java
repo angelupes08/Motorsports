@@ -25,6 +25,8 @@ public interface DriverRepo extends JpaRepository<Drivers, Integer> {
     @Query("SELECT new com.lti.entity.DriverDto(d.name, d.nationality, d.age, t.teamname, t.teamprincipal) "
     		+"FROM Drivers d INNER JOIN d.teams t WHERE d.nationality = :nationality")
     List<DriverDto> getDriverDetailsByNationality(String nationality);
+    
+    Drivers findByName(String name);
 
 
 }
