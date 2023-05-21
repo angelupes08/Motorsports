@@ -16,5 +16,7 @@ public interface DriverService {
 	List<Drivers> returnDrivers();
 	
 	List<Drivers> getDriversByNationality(String nationality);
+	
+	List<DriverDto> getDriverDetailsByNationality(String nationality);
 
 }

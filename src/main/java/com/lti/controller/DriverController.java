@@ -56,5 +56,10 @@ public class DriverController {
 		
 	}
 	
+	@GetMapping("/country")
+	public List<DriverDto> getDriverDetailsByNationality(@RequestParam("country") String country){
+		
+		return dService.getDriverDetailsByNationality(country);
+	}
 	
 }

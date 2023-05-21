@@ -95,6 +95,12 @@ public class DriverServiceImpl implements DriverService {
 		
 		return dRepo.findByNationality(nationality);
 	}
+
+	@Override
+	public List<DriverDto> getDriverDetailsByNationality(String nationality) {
+		
+		return dRepo.getDriverDetailsByNationality(nationality);
+	}
 		
 		
 		
