@@ -4,7 +4,7 @@ Teams and Drivers have one to many relationship.
 
 The project contains following endpoints.
 
-@PostMapping("/drivers")	   - Posts drivers to DB
+@PostMapping("/drivers")     - Posts drivers to DB
 @GetMapping("/driver")       - Gets Driver details by Id
 @GetMapping("/drivers")      - Gets Driver details
 @PutMapping("/updatedriver") - Updates Driver details
